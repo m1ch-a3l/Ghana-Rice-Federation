@@ -161,10 +161,6 @@ export default function Home() {
 
         {/* Main content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <div className="inline-flex items-center gap-2 bg-gold/20 border border-gold/40 text-gold-light text-xs font-mono uppercase tracking-widest px-4 py-2 rounded-full mb-8 badge-pulse">
-            <Wheat size={13} /> The National Voice of the Rice Industry
-          </div>
-
           {/* Animated headline per slide */}
           <h1
             key={current}
@@ -193,8 +189,8 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-10 border-t border-white/10">
+          {/* Stats — hidden on mobile, shown from md up */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-10 border-t border-white/10">
             {stats.map(({ value, label }) => (
               <div key={label} className="text-center">
                 <div className="font-serif text-gold-light text-3xl md:text-4xl font-semibold">{value}</div>
