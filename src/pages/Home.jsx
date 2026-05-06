@@ -2,27 +2,30 @@ import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Shield, Users, TrendingUp, Wheat, Globe, Leaf, Factory, Heart, Sprout, Package, ChevronLeft, ChevronRight } from 'lucide-react'
 import SectionLabel from '../components/SectionLabel'
+import slide1Img from '../assets/images/WhatsApp Image 2026-04-28 at 2.22.21 AM.jpeg'
+import slide2Img from '../assets/images/WhatsApp Image 2026-04-28 at 2.24.15 AM.jpeg'
+import slide3Img from '../assets/images/WhatsApp Image 2026-04-28 at 2.26.05 AM.jpeg'
 
 const slides = [
   {
     label: 'Food Security',
     headline: 'Feeding a Nation,\nGrown in Ghana',
     sub: "Domestic rice production is Ghana's most important food security imperative.",
-    img: 'src/assets/images/WhatsApp Image 2026-04-28 at 2.22.21 AM.jpeg',
+    img: slide1Img,
     overlay: 'from-forest/80 via-forest/55 to-black/50',
   },
   {
     label: 'Economic Sovereignty',
     headline: 'Reducing the\n$1 Billion Import Bill',
     sub: 'Every bag of Ghanaian rice keeps wealth within our communities and our nation.',
-    img: 'src/assets/images/WhatsApp Image 2026-04-28 at 2.24.15 AM.jpeg',
+    img: slide2Img,
     overlay: 'from-[#3a2800]/85 via-[#5a3e00]/60 to-black/50',
   },
   {
     label: 'Rural Livelihoods',
     headline: 'Half a Million\nFarming Families',
     sub: 'Smallholder farmers are the backbone of the rice sector — we advocate for each of them.',
-    img: 'src/assets/images/WhatsApp Image 2026-04-28 at 2.26.05 AM.jpeg',
+    img: slide3Img,
     overlay: 'from-forest/85 via-forest-mid/60 to-black/50',
   },
   {

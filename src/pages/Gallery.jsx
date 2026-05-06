@@ -5,7 +5,7 @@ import SectionLabel from '../components/SectionLabel'
 
 // ── Farm Visits images loaded from the local folder via Vite glob import ──
 const farmVisitModules = import.meta.glob(
-  '../assets/images/farm Visits/*.jpeg',
+  '../assets/images/farm-visits/*.jpeg',
   { eager: true }
 )
 

@@ -1,6 +1,7 @@
 import { BookOpen, FlaskConical, Wrench, Sprout, CalendarDays } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import SectionLabel from '../components/SectionLabel'
+import programsHeaderImg from '../assets/images/WhatsApp Image 2026-04-28 at 2.29.27 AM.jpeg'
 
 const flagship = [
   { icon: BookOpen, title: 'Capacity Building', desc: 'Training farmers, millers, and agribusiness actors in modern, evidence-based practices across the value chain.' },
@@ -36,7 +37,7 @@ export default function Programs() {
         label="Training & Programs"
         title="Building the Industry From Within"
         subtitle="Practical, impactful programmes that strengthen every link in Ghana's rice value chain."
-        img="src/assets/images/WhatsApp Image 2026-04-28 at 2.29.27 AM.jpeg?w=1920&auto=format&fit=crop&q=80"
+        img={programsHeaderImg}
       />
 
       {/* Flagship Programmes */}

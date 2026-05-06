@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import logoUrl from '../assets/images/Ghana-Rice-Federation-logo.jpg'
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -37,7 +38,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
-            src="src/assets/images/Ghana-Rice-Federation-logo.jpg"
+            src={logoUrl}
             alt="Ghana Rice Federation"
             className="h-10 w-auto object-contain"
           />

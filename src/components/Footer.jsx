@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logoUrl from '../assets/images/Ghana-Rice-Federation-logo.jpg'
 
 const socialLinks = [
   { label: 'Twitter/X', href: '#', char: '𝕏' },
@@ -17,7 +18,7 @@ export default function Footer() {
         <div>
           <div className="mb-4">
             <img
-              src="src/assets/images/Ghana-Rice-Federation-logo.jpg"
+              src={logoUrl}
               alt="Ghana Rice Federation"
               className="h-10 w-auto object-contain"
             />
