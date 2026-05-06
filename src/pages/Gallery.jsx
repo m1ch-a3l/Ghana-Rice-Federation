@@ -31,7 +31,10 @@ const farmVisitImages = Object.values(farmVisitModules).map((mod, i) => ({
   span:    spanCycle[i % spanCycle.length],
 }))
 
-const categories = ['All', 'Farm Visits', 'Farming', 'Harvest', 'Milling', 'Community', 'Market']
+const categories = ['All', 'Farm Visits']
+
+/* ── Placeholder categories — uncomment baseImages below to restore ──
+const baseCategories = ['Farming', 'Harvest', 'Milling', 'Community', 'Market']
 
 const baseImages = [
   // Farming
@@ -62,9 +65,9 @@ const baseImages = [
   { id: 17, src: 'https://images.unsplash.com/photo-1567958451986-2de427a4a0be?w=900&auto=format&fit=crop&q=80', caption: 'Packaged local rice brands', cat: 'Market', span: 'col-span-2' },
   { id: 18, src: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=80', caption: 'Wholesale grain trade', cat: 'Market', span: '' },
 ]
+── end placeholder ── */
 
-// Farm Visits appear first so the category filter lands on real photos immediately
-const images = [...farmVisitImages, ...baseImages]
+const images = farmVisitImages
 
 export default function Gallery() {
   const [active, setActive] = useState('All')
