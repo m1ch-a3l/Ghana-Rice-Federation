@@ -2,9 +2,9 @@ import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Shield, Users, TrendingUp, Wheat, Globe, Factory, Heart, Sprout, Package } from 'lucide-react'
 import SectionLabel from '../components/SectionLabel'
-import slide1Img from '../assets/images/rice-fair/_MG_6541.jpg'
-import slide2Img from '../assets/images/rice-fair/_MG_6447.jpg'
-import slide3Img from '../assets/images/rice-fair/_MG_6469.jpg'
+import slide1Img from '../assets/hero section/chang-yi-feng-t4QFXtfXkqk-unsplash.jpg'
+import slide2Img from '../assets/hero section/cooked-rice-red-cup-placed-plywood-floor.jpg'
+import slide3Img from '../assets/hero section/gowtham-agm-BWYUwLnGLeY-unsplash.jpg'
 
 const bgSlides = [slide1Img, slide2Img, slide3Img]
 
