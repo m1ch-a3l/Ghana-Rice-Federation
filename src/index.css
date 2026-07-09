@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #002E1F;
+  --color-forest-mid: #014D30;
+  --color-forest-light: #027A4A;
+  --color-gold: #7AD63D;
+  --color-gold-light: #9FE060;
+  --color-gold-pale: #E5F7D0;
+  --color-cream: #F6F8ED;
+  --color-ink: #001A10;
+  --color-mist: #DDE8D5;
+  --color-slate: #3D5040;
+  --color-body: #1A3020;
+
+  --font-serif: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Inter', monospace;
+}
+
+/* Base resets inside @layer base so Tailwind utilities can override them */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-body);
+    background-color: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulseBadge {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(122,214,61,.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(122,214,61,0); }
+}
+@keyframes heroTextIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes progressBar {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .page-fade   { animation: pageFadeIn .35s ease forwards; }
+  .badge-pulse { animation: pulseBadge 2.5s ease-in-out infinite; }
+  .animate-marquee       { animation: marquee 35s linear infinite; }
+  .animate-marquee:hover { animation-play-state: paused; }
+}
